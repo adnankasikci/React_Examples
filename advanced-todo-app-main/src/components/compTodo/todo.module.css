@@ -1,0 +1,50 @@
+.todoList {
+    list-style: none;
+    padding: 0;
+    margin-top: .25rem;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #390056;
+    border-radius: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 5px 0 5px #390056;
+    border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #630095;
+    box-shadow: inset 3px 0 2px #aa00ff;
+    border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #AC00FF;
+    border-radius: 1rem;
+}
+
+.todoList>li:nth-child(4n) {
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+
+.todoList>li:nth-child(4n + 1) {
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.todoList>li:nth-child(4n + 2) {
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+.todoList>li:nth-child(4n + 3) {
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
